@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+ Task 1 -->
+
+ <div class="head"> 
+     <h1>Signup form</h1>
+</div>
+ 
+<div  id="formsubmit">
+    <form action="#"  onsubmit=" submitbtn() ">
+            <table class="head1" >
+    <tr>
+    <td>
+        Name 
+    </td>
+    <td>
+        <input class="sa" type="text" id="name"  >
+    </td>
+    </tr>
+    
+    <tr>
+        <td>Mobile Number</td>
+        <td>
+        <input class="sa"  type="number" id="mobile">
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            Qualification
+        </td>
+        <td>
+            <input class="sa"  type="text" id="qualification">
+        </td>
+    </tr>
+    
+    <tr>
+        <td> 
+            Address
+        </td>
+        <td>
+            <input class="sa"  type="text" id="address">
+    
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Email
+        </td>
+        <td>
+            <input class="sa"  type="text" id="email">
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <button class="head1">Submit</button>
+        </td>
+    </tr>
+            </table> 
+    
+    </form>
+    </div>
+    
+    <div id= "tables" class="hidden" >
+        <table>
+            <tr><td>
+                Name 
+            </td>
+            <td >
+                <p id ="name1"> </p>
+                
+            </td>
+            </tr>
+            
+            <tr>
+                <td>Mobile Number</td>
+                <td >
+                    <p id="mobile1"></p>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Qualification
+                </td>
+                <td >
+                    <p id="qualification1"></p>
+                </td>
+            </tr>
+            
+            <tr>
+                <td> 
+                    Address
+                </td>
+                <td >
+            <p id="address1"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email
+                </td>
+                <td id="email1">
+                </td>
+            </tr>
+    
+                    </table>
+    </div> 
+    
+<br><br>
+<br><br> 
+
+    <!-- Task 2 -->
+   
+ 
+ <p id="paragraph">Generally, data mining (sometimes called data or knowledge discovery) <a href="javascript:void(0)" onclick="seemore()"> Read more </a> </p>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+    <!-- Task 3 -->
+
+<table>
+    <tr>
+        <td><b>Index</b></td>
+        <td><b>Name</b></td>
+        <td><b>Class</b></td>
+    </tr>
+    <tr id = "0">
+        <td>0</td>
+    <td>Jhone</td>
+    <td>10</td>
+    <td><button onclick="deleteRow(0);">Delete</button></td>
+    <td><button onclick="edit(0);">Edit</button></td>
+
+</tr>
+    <tr id = "1">
+        <td>1</td>
+        <td>Doe</td>
+        <td>9</td>
+        <td><button onclick="deleteRow(1);">Delete</button></td>
+        <td><button onclick="edit(1);">Edit</button></td>
+    
+    </tr>
+    <tr id = "2">
+        <td>2</td>
+        <td>Mark</td>
+        <td>10</td>
+        <td><button onclick="deleteRow(2);">Delete</button></td>
+        <td><button onclick="edit(2);">Edit</button></td>
+    
+    </tr>
+    <tr id = "3">
+        <td>3</td>
+        <td>James</td>
+        <td>8</td>
+        <td><button onclick="deleteRow(3);">Delete</button></td>
+        <td><button onclick="edit(3);">Edit</button></td>
+        
+    </tr>
+<tr id = "editField" class= "hidden">
+    <td></td>
+    <td><input type="text" ></td>
+    <td><input type="text" ></td>
+    <td><button onclick ="save(saveId);">Save</button></td>
+    <td><button onclick="cancel();" >Cancel</button></td>
+</tr>
+
+</table> 
